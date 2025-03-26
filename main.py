@@ -1,9 +1,9 @@
+import os
 from fastapi import FastAPI, Query
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import yt_dlp
-import os
 from fastapi import Request
 
 app = FastAPI()
@@ -81,7 +81,8 @@ async def download_file(filename: str):
         return FileResponse(file_path, media_type="application/octet-stream", filename=filename)
     return HTMLResponse(content=f"<html><body><h1>File not found!</h1></body></html>")
 
-# Run the app if this script is executed directly
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# To ensure Vercel doesn't need to run uvicorn manually, the app is already ready for serverless execution.
+# Comment out the following block for Vercel
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
