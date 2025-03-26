@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Fix the CSS link -->
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Video Downloader</h1>
+        <form action="/download/" method="get">
+            <input type="text" name="url" placeholder="Enter Video URL" required>
+            <button type="submit">Get Video</button>
+        </form>
+        <div class="message">
+            <p>Enter a video URL and click "Get Video" to get started!</p>
+            <p>After clicking the "Get Video" button, please wait a few minutes for your file to finish downloading.</p>
+        </div>
+
+        <!-- Horizontal list of icons for supported adult websites -->
+        <div class="icon-list">
+            <a href="https://xhamster.com" target="_blank">
+                <img src="/static/res/XHamster-Logo.wine.webp" alt="XHamster">
+            </a>
+            <a href="https://pornhub.com" target="_blank">
+                <img src="/static/res/Pornhub-logo-square.webp" alt="Pornhub">
+            </a>
+            <a href="https://xvideos.com" target="_blank">
+                <img src="/static/res/xvideos-logo-77E7B4F168-seeklogo.com-removebg-preview.png" alt="XVideos">
+            </a>
+            <a href="https://youporn.com" target="_blank">
+                <img src="/static/res/YouPorn-Logo-500x281.png" alt="YouPorn">
+            </a>
+            <a href="https://redtube.com" target="_blank">
+                <img src="/static/res/redtube_logo.svg" alt="RedTube">
+            </a>
+            <a href="https://www.brazzers.com/" target="_blank">
+                <img src="/static/res/6128f8ebe3a15c00041a8e3e.webp" alt="brazzers">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Video Downloader. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
