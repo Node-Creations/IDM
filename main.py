@@ -60,7 +60,7 @@ async def download_video(url: str = Query(..., title="Video URL")):
                         <button>Download {filename}</button>
                     </a>
                     <br><br>
-                    <a href="/">
+                    <a href="https://shrinkme.ink/rG95l">
                         <button>Download Another Video</button>
                     </a>
                 </div>
